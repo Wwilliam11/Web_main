@@ -27,7 +27,7 @@ input[type="submit"] {
     text-align: center;
     text-decoration: none;
     position: relative;
-    bottom: 45px; left: 500px;
+    bottom: 45px; left: 480px;
     background-color: aqua;
     width: 70px;
     padding: 10px 10px;
@@ -38,7 +38,7 @@ input[type="submit"] {
     text-align: center;
     text-decoration: none;
     position: relative;
-    bottom: 45px; left: 200px;
+    bottom: 45px; left: 300px;
     background-color: aqua;
     width: 70px;
     padding: 10px 22.5px;
