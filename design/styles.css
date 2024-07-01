@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+form {
+    margin: 0 auto;
+    width: 300px;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+}
+
+label {
+    margin-top: 1em;
+    display: block;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"] {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.5em;
+}
+
+.register_button {
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    bottom: 45px; left: 500px;
+    background-color: aqua;
+    width: 70px;
+    padding: 10px 10px;
+    border-radius: 10px
+}
+
+.login_button {
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    bottom: 45px; left: 320px;
+    background-color: aqua;
+    width: 70px;
+    padding: 10px 22.5px;
+    border-radius: 10px
+}
+
+.login_button,.register_button :hover{
+    cursor: pointer;
+}
+
