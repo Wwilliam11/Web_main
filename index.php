@@ -6,9 +6,7 @@
 </head>
 <body>
     <h2>Welcome to Our Website</h2>
-    <div class="button-container">
-        <a href="register.php" class="register_button">Register</a>
-        <a href="login.php" class="login_button">Login</a>
-    </div>
+    <a href="register.php" class="register">Register</a>
+    <a href="login.php" class="login">Login</a>
 </body>
 </html>

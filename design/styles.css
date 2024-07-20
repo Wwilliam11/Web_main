@@ -1,52 +1,261 @@
+@keyframes rainbow-horizontal {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+@keyframes rainbow-border {
+    0% { border-color: red; }
+    14% { border-color: orange; }
+    28% { border-color: yellow; }
+    42% { border-color: green; }
+    57% { border-color: blue; }
+    71% { border-color: indigo; }
+    85% { border-color: violet; }
+    100% { border-color: red; }
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: top left;
+    }
+    100% {
+        background-position: bottom right;
+    }
+}
+
+body {
+    background: linear-gradient(45deg, aqua, transparent);
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s linear infinite;
+}
+
 body {
     font-family: Arial, sans-serif;
+    background-color: white;
+    min-height: 100vh;
+}
+
+.rainbow-input:focus {
+    outline: none;
+    border: 2px solid;
+    animation: rainbow-border 2s linear infinite;
+    border-radius: 4px; /* Optional: to make the border rounded */
+}
+
+.rainbow-input:focus {
+    outline: none;
+    border: 2px solid;
+    animation: rainbow-border 2s linear infinite;
+}
+
+.top-right {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.chat_room
+{
+    background-color: white;
+    outline: black;
+    border: 2px solid black;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 10px;
+    width: 60px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Thêm thuộc tính transition */
+}
+
+.login /*login*/ 
+{
+    background-color: white;
+    outline: black;
+    border: 2px solid black;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 10px;
+    width: 60px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Thêm thuộc tính transition */
+}
+
+.user /*user*/
+{
+    background-color: white;
+    padding: 10px;
+    width: 60px;
+    margin-top: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Thêm thuộc tính transition */
+}
+
+.register /*register*/
+{      
+    background-color: black;
+    border-radius: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 60px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Thêm thuộc tính transition */
+}
+
+.logout /*logout*/
+{
+    background-color: black;
+    border-radius: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 60px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Thêm thuộc tính transition */
+}
+
+
+.logout:hover {
+    cursor: pointer; 
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 2px solid black  
+}
+
+
+.register:hover{
+    cursor: pointer; 
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 2px solid black
+}
+.login:hover {
+    cursor:pointer;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 2px solid white;
+}
+
+.chat_room:hover
+{
+    cursor:pointer;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 2px solid white;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #1DB5EF;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.header a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.header a:hover {
+    text-decoration: underline;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.start_button {
+    background-color: black;
+    border-radius: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 60px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Thêm thuộc tính transition */
+}
+
+.start_button:hover {
+    cursor:pointer;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 2px solid white;
 }
 
 form {
-    margin: 0 auto;
-    width: 300px;
-    padding: 1em;
-    border: 1px solid #ccc;
-    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
 }
 
-label {
-    margin-top: 1em;
-    display: block;
+/* Định dạng cho các nút gửi */
+form button[type="submit"] {
+    width: 140px; /*độ dài button*/
+    background-color: #A340D3; /* Màu nền xanh lá */
+    color: white; /* Chữ trắng */
+    padding: 10px 20px; /* Độ rộng */
+    border: none; /* Không viền */
+    border-radius: 4px; /* Đường viền cong */
+    cursor: pointer; /* Con trỏ chuột khi di chuột */
+    font-size: 18px; /* Cỡ chữ */
 }
 
-input[type="text"],
-input[type="password"],
-input[type="submit"] {
-    width: 100%;
-    padding: 0.5em;
-    margin-top: 0.5em;
-}
-
-.register_button {
-    text-align: center;
-    text-decoration: none;
-    position: relative;
-    bottom: 45px; left: 480px;
-    background-color: aqua;
-    width: 70px;
-    padding: 10px 10px;
-    border-radius: 10px
-}
-
-.login_button {
-    text-align: center;
-    text-decoration: none;
-    position: relative;
-    bottom: 45px; left: 300px;
-    background-color: aqua;
-    width: 70px;
-    padding: 10px 22.5px;
-    border-radius: 10px
+/* Thay đổi màu nút gửi khi di chuột */
+form button[type="submit"]:hover {
+    background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 1400% 1400%;
+    animation: rainbow-horizontal 5s infinite;
+    cursor: pointer; /* Con trỏ chuột khi di chuột */
 }
 
 
-.login_button :hover{
-    cursor: pointer;
+/* Định dạng cho các hộp nhập thông tin */
+form input[type="text"],
+form input[type="password"] {
+    margin-left: 0px; /* Tọa độ x luôn là 0 */
+    margin-bottom: 10px;
+    width: 120px; /*độ rộng ô nhập*/
+    padding: 10px; /* Độ rộng */
+    border: 1px solid #ccc; /* Viền màu xám */
+    border-radius: 10px; /* Đường viền cong */
+    font-size: 16px; /* Cỡ chữ */
 }
 
+/* Thay đổi màu viền của hộp nhập thông tin khi nhập */
+form input[type="text"]:focus,
+form input[type="password"]:focus {
+    border-color: #007bff; /* Màu nền xanh lá */
+    outline: none; /* Xóa viền mặc định */
+}
